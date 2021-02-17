@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My Name is Savir Suda, also known as <a href="https://twitter.com/savxiety">@savxiety</a>, I am a Researcher/Bug Hunter on <a href="https://twitter.com/Hacker0x01">HackerOne</a>.
+My Name is Savir Suda, also known as <a href="https://twitter.com/savxiety">@savxiety</a>, I am a Security Researcher/Bug Hunter on <a href="https://twitter.com/Hacker0x01">HackerOne</a>.
 
 ### More Information
 
