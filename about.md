@@ -8,10 +8,11 @@ My Name is Savir Suda, also known as <a href="https://twitter.com/savxiety">@sav
 
 ### More Information
 
-I have my very own Discord Server where I am trying to build a community of hackers like me, we share useful resources everyday and help eachother out! It's awesome!
-Join My Discord Server by clicking <a href="https://discord.gg/VPtSS8gfZ4">here</a>
+I have my very own Discord Server where I am trying to build a community of hackers like myself, we share useful resources everyday and help eachother out! It's awesome!
+Join My Discord Server by clicking <a href="https://discord.gg/VPtSS8gfZ4">here</a>.
 
 ### Contact me
 
 Feel free to shoot me a Dm on Twitter at anytime :)
+
 <a href=https://twitter.com/savxiety>@savxiety</a>
