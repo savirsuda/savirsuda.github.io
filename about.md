@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+My Name is Savir, also known as <html><a href="https://twitter.com/savxiety">@savxiety</a></html>, I am a Researcher/Bug Hunter on <html><a href="https://twitter.com/Hacker0x01">HackerOne</a></html>.
 
 ### More Information
 
