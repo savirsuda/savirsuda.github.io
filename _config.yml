@@ -6,7 +6,7 @@
 name: Savir Suda
 
 # Short bio or description (displayed in the header)
-description: Bug Bounty Hunter at <a>href="https://twitter.com/hacker0x01">@Hacker0x01</a>
+description: Bug Bounty Hunter at <html><a>href="https://twitter.com/hacker0x01">@Hacker0x01</a></html>
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://pbs.twimg.com/profile_images/1342903870947610624/Nzf9jIFi_400x400.jpg
