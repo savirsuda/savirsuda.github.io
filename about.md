@@ -14,5 +14,3 @@ Join My Discord Server by clicking <a href="https://discord.gg/VPtSS8gfZ4">here<
 ### Contact me
 
 Feel free to shoot me a Dm on Twitter at anytime :)
-
-<html><a href=https://twitter.com/savxiety>@savxiety</a></html>
