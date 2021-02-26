@@ -9,7 +9,7 @@ name: Savir Suda
 description: Live, Learn, Hack!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![_config.yml]({{ site.baseurl }}/images/savir.PNG)
+avatar: http://104.131.83.169/savir.PNG
 
 #
 # Flags below are optional
