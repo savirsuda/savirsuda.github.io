@@ -43,3 +43,6 @@ Email Sent successfully to redacted@gmail.com
 I found this very interesting and as a result I got excited. I knew exactly what to do, I fired up an Intruder Window in BurpSuite, configured it to Brute-Force the value of the `id` parameter that was found earlier in the URL, and started the Attack. I looked at the Intruder again after letting it run for a few minutes and was surprised by being presented to more than 50,000 private email addresses of the users!
 
 ![_config.yml]({{ site.baseurl }}/images/what.gif)
+
+
+Basically this Attack worked because the application assigned every user's account with a numeric **ID** from `1` till `50,000`. The `ID` of a user could have been guessed easily as this application kept the IDs sequential meaning that if two users sign up, User A and User B, User A signs up a minute before than User B, then User A will be asigned with an ID of `1` and User B would be assigned with an ID of `2`. Intruder Brute-forced all the IDs till 50,000 and since these IDs were sequential, this meant there were 50K users signed up on the web application but more importantly, an attacker would be able to view the **Private Emaill Addresses of More than 50K Users!** 
