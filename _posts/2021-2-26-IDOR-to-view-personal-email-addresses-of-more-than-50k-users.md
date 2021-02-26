@@ -26,8 +26,15 @@ One day, I was checking the results of my Recon which was done using my custom b
 `site:subdomain.example.com inurl:id`
 
 
-When I did this, I got an endpoint as a result of the search. This endpoint contained `ID` as a `GET` parameter in the URL with some other irrelevant parameters. The final URL looked like this: `https://subdomain.example.com/accounts/Directory/XYZ/Form.aspxID=1&ContentTypeId=123`
-The interesting part was that in the response, when I scrolled down, I could see a user's personal email address. The Response looked like this:
+When I did this, I got an endpoint as a result of the search. This endpoint contained `ID` as a `GET` parameter in the URL with some other irrelevant parameters. The final URL looked like this: `https://subdomain.example.com/accounts/Directory/XYZ/Form.aspx?ID=1&ContentTypeId=123`
+The interesting part was that in the response, when I scrolled down, I could see a user's personal email address. I got the following response:
+
+
+`Email Sent successfully to redacted@gmail.com`
+
+
+
+The HTTP Response looked like this:
 
 ```php
 HTTP/1.1 200 OK
@@ -45,7 +52,7 @@ Referrer-Policy: same-origin
 
 Email Sent successfully to redacted@gmail.com
 ```
-I found this very interesting and as a result I got excited. I knew exactly what to do, I fired up an Intruder Window in BurpSuite, configured it to Brute-Force the value of the `id` parameter that was found earlier in the URL, and started the Attack. I looked at the Intruder again after letting it run for a few minutes and was surprised by being presented to more than 50,000 private email addresses of the users!
+I found this very interesting and as a result I got excited. I knew exactly what to do, I changed the value of the `ID` parameter to another random numeric ID and yes, I got another private email address of a user! This time I had changed the ID from `1` to `2`. I noticed that even 4 digit long numeric IDs were tied to a user's account. Now, it was time of a nice Proof Of Concept to increase the impact. I fired up an Intruder Window in BurpSuite, configured it to Brute-Force the value of the `id` parameter that was found earlier in the URL, and started the Attack. I looked at the Intruder again after letting it run for a few minutes and was surprised by being presented to more than 50,000 private email addresses of the users!
 
 ![_config.yml]({{ site.baseurl }}/images/what.gif)
 
