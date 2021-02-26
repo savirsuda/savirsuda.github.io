@@ -9,7 +9,7 @@ name: Savir Suda
 description: Live, Learn, Hack!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://savirsuda1501.000webhostapp.com/savir.PNG
+avatar: "/images/savir.PNG"
 
 #
 # Flags below are optional
