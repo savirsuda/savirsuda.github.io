@@ -74,7 +74,7 @@ By exploiting this IDOR vulnerability an attacker is able to leak private email 
 
 - To Leak the Private Email Address of a User, no user interaction was required at all.
 - The ID parameter was vulnerable to IDOR attacks.
-- The ID parameter had a numeric ID with which objects(emails) were referenced.
+- The ID parameter had a numeric ID to which objects(emails) were referenced.
 - The value of the ID parameter was predictable and an object is linked in an increasing value. In this case, these IDs with values from 1,2,3,4,5,6,7 and so on was referred to as an object(user email).
 
 Due to these points, the severity of this vulnerability was **High**.
