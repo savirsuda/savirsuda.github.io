@@ -14,7 +14,7 @@ Lets call the target website as **example.com** and the domain on which this vul
 **Description**
 
 
-One day, I was doing Recon using my custom bash script and I had found an Interesting domain. The domain was called `subdomain.example.com`. 
+One day, I was doing Recon using my custom bash script and I had found an interesting subdomain. The subdomain was called `subdomain.example.com`. I started crawling the domain to find all of its [URLS](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL) using an awesome tool made by [@TomNomNom](https://twitter.com/tomnomnom)
 
 
 ![_config.yml]({{ site.baseurl }}/images/idor-img.PNG)
