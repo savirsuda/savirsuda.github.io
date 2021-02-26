@@ -45,7 +45,10 @@ I found this very interesting and as a result I got excited. I knew exactly what
 ![_config.yml]({{ site.baseurl }}/images/what.gif)
 
 
+This means that with the change of the ID parameter I can leak the private emails of users of this web application. Basically, this means that the ID's value 1 is linked with an email that is `redacted@gmail.com` and the ID's value of 2 is linked with the email `redacted2@gmail.com`.
+
 Basically this Attack worked because the application assigned every user's account with a numeric **ID** from `1` till `50,000`. The `ID` of a user could have been guessed easily as this application kept the IDs sequential meaning that if two users sign up, User A and User B, User A signs up a minute before than User B, then User A will be asigned with an ID of `1` and User B would be assigned with an ID of `2`. Intruder Brute-forced all the IDs till 50,000 and since these IDs were sequential, this meant there were 50K users signed up on the web application but more importantly, an attacker would be able to view the **Private Email Addresses of More than 50K Users!** 
+
 
 **Impact**
 
