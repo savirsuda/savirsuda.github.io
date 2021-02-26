@@ -19,7 +19,7 @@ Lets call the target website as **example.com** and the domain on which this vul
 **Description**
 
 
-One day, I was checking the results of my Recon which was done using my custom bash script and I while going through the subdomains it had found, I noticed an interesting subdomain. Lets call the subdomain as `subdomain.example.com`. I started crawling the subdomain to find all of its [URLS](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL) using an awesome tool made by [@TomNomNom](https://twitter.com/tomnomnom) called `waybackurls`. I am not going to explain how this tool works or what it is, you can find the Link to it's public Github Repository at the end of this Blog post. Basically I found an Interesting URL with `waybackurls` which is:
+One day, I was checking the results of my Recon which was done using my custom bash script and while going through the subdomains it had found, I noticed an interesting subdomain. Lets call the subdomain as `subdomain.example.com`. I started crawling the subdomain to find all of its [URLS](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL) using an awesome tool made by [@TomNomNom](https://twitter.com/tomnomnom) called `waybackurls`. I am not going to explain how this tool works or what it is, you can find the Link to it's public Github Repository at the end of this Blog post. Basically I found an Interesting URL with `waybackurls` which is:
 `https://subdomain.example.com/accounts/Directory/XYZ/Form.aspx`. This endpoint was actually a Forgot Password Page and it allowed users to request a password reset. Nothing fancy or alerting right now but lets see what happens later ;) The extension of this page was `.aspx` which made me Directory Brute force for other `.aspx` files. Unfortunately I did not find anything and eventually gave up on Directory brute forcing. Now I thought of using Google Dorks on this subdomain. I used the following Google Dork:
 `site:subdomain.example.com inurl:id`. When I did this, I got an endpoint as a result of the search. This endpoint contained `ID` as a `GET` parameter in the URL with some other irrelevant parameters. The final URL looked like this: `https://subdomain.example.com/accounts/Directory/XYZ/Form.aspxID=1&ContentTypeId=123`
 The interesting part was that in the response, when I scrolled down, I could see a user's personal email address. The Response looked like this:
@@ -55,6 +55,9 @@ Basically this Attack worked because the application assigned every user's accou
 
 By exploiting this IDOR vulnerability an attacker is able to leak private email addresses of about 50,000 users which is a clear privacy violation for the users. The attacker can store these email addresses in a database and plan future attacks on them.
 
+- To Leak the Private Email Address of a User, no user interaction was required at all.
 - The ID parameter was vulnerable to IDOR attacks.
 - The ID parameter had a numeric ID with which objects(emails) were referenced.
 - The value of the ID parameter was predictable and an object is linked in an increasing value. In this case, these IDs with values from 1,2,3,4,5,6,7 and so on was referred to as an object(user email).
+
+Due to these points, the severity of this vulnerability was **High**.
