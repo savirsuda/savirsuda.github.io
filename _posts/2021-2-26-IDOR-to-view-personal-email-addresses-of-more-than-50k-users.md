@@ -90,7 +90,7 @@ Due to these points, the severity of this vulnerability was **High**.
 - Thanks to [@Bugcrowd](https://twitter.com/bugcrowd) for the [Diagram](https://github.com/savirsuda/savirsuda.github.io/blob/master/images/idor-img.PNG) IDOR diagram.
 - Checkout [@ProjectDiscovery's](https://twitter.com/pdiscoveryio) Github Repository for some cool Stuff that they publish - https://github.com/projectdiscovery
 - Follow [@Intigriti](https://twitter.com/intigriti) on Twitter and Sign up for Weekly BugBytes that they release every week, to stay up to date with the best resources!
-- Intigriti has archived all of the BugBytes that they have released till date [here](https://blog.intigriti.com/category/bugbytes/)
+- Intigriti has archived all of the BugBytes that they have released till date [here](https://blog.intigriti.com/category/bugbytes/) .
 
 
 Thanks for Reading this, hope you enjoyed my first blog :)
