@@ -45,7 +45,7 @@ The HTTP Response looked like this:
 HTTP/1.1 200 OK
 Date: <SOME-RANDOM-DATE>
 Content-Type: text/html; charset=utf-8
-Content-Length: 11163
+Content-Length: <CONTENT-LENGTH>
 Connection: close
 Cache-Control: private, s-maxage=0
 Vary: Accept-Encoding
