@@ -41,7 +41,7 @@ The interesting part was that in the response, when I scrolled down, I could see
 
 The HTTP Response looked like this:
 
-```python
+```php
 HTTP/1.1 200 OK
 Date: <SOME-RANDOM-DATE>
 Content-Type: text/html; charset=utf-8
@@ -81,3 +81,17 @@ Due to these points, the severity of this vulnerability was **High**.
 
 
 ![_config.yml]({{ site.baseurl }}/images/dab.gif)
+
+
+**Resources, Credits and Shoutouts**
+
+- [@TomNomNom's](https://twitter.com/tomnomnom) Github Repository - https://github.com/tomnomnom
+- Waybackurls' Public Github Repository - https://github.com/tomnomnom/waybackurls
+- Thanks to [@Bugcrowd](https://twitter.com/bugcrowd) for the [Diagram](https://github.com/savirsuda/savirsuda.github.io/blob/master/images/idor-img.PNG) IDOR diagram.
+- Checkout [@ProjectDiscovery's](https://twitter.com/pdiscoveryio) Github Repository for some cool Stuff that they publish - https://github.com/projectdiscovery
+- Follow [@Intigriti](https://twitter.com/intigriti) on Twitter and Sign up for Weekly BugBytes that they release every week, to stay up to date with the best resources!
+
+Thanks for Reading this, hope you enjoyed my first blog :)
+Many more blogs to come xD
+
+exit()
