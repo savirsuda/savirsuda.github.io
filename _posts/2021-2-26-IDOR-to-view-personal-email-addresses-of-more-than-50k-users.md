@@ -95,9 +95,7 @@ Due to these points, the severity of this vulnerability was **High**.
 
 Thanks for Reading this, hope you enjoyed my first blog :)
 
-
-Many more blogs to come xD
-
+Many more to come xD
 
 Until next time!
 
