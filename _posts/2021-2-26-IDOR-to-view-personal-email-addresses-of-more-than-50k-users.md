@@ -9,7 +9,7 @@ This is My First Blog and I am really excited about it at the time of writing th
 **Summary**
 
 
-Lets call the target website as **example.com** and the domain on which this vulnerability was found as **subdomain.example.com** for the Privacy of the company. The Vulnerability exists in the Forgot-Password Page of **subdomain.example.com**. Basically, while requesting a password change for a user,  a **GET** parameter was sent. I was able to manipulate this parameter and was able to view the Personal Email addresses of probably all of the registered users on the website. This was a pretty simple bug and a typical case of an [IDOR].(https://portswigger.net/web-security/access-control/idor)
+Lets call the target website as **example.com** and the domain on which this vulnerability was found as **subdomain.example.com** for the Privacy of the company. The Vulnerability exists in the Forgot-Password Page of **subdomain.example.com**. Basically, while requesting a password change for a user,  a **GET** parameter was sent. I was able to manipulate this parameter and was able to view the Personal Email addresses of probably all of the registered users on the website. This was a pretty simple bug and a typical case of an [IDOR](https://portswigger.net/web-security/access-control/idor) .
 
 **Description**
 
