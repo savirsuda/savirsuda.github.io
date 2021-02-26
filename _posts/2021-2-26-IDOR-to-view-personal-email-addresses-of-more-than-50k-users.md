@@ -73,3 +73,6 @@ By exploiting this IDOR vulnerability an attacker is able to leak private email 
 - The value of the ID parameter was predictable and an object is linked in an increasing value. In this case, these IDs with values from 1,2,3,4,5,6,7 and so on was referred to as an object(user email).
 
 Due to these points, the severity of this vulnerability was **High**.
+
+
+![_config.yml]({{ site.baseurl }}/images/dab.gif)
