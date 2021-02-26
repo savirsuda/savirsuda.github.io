@@ -26,8 +26,13 @@ One day, I was checking the results of my Recon which was done using my custom b
 `site:subdomain.example.com inurl:id`
 
 
-When I did this, I got an endpoint as a result of the search. This endpoint contained `ID` as a `GET` parameter in the URL with some other irrelevant parameters. The final URL looked like this: `https://subdomain.example.com/accounts/Directory/XYZ/Form.aspx?ID=1&ContentTypeId=123`
-The interesting part was that in the response, when I scrolled down, I could see a user's personal email address. I got the following response:
+When I did this, I got an endpoint as a result of the search. This endpoint contained `ID` as a `GET` parameter in the URL with some other irrelevant parameters. The final URL looked like this: 
+
+
+`https://subdomain.example.com/accounts/Directory/XYZ/Form.aspx?ID=1&ContentTypeId=123`
+
+
+The interesting part was that in the response, when I scrolled down, I could see a random user's personal email address. I got the following response:
 
 
 `Email Sent successfully to redacted@gmail.com`
