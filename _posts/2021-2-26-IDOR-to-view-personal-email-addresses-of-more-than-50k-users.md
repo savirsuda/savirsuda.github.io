@@ -42,3 +42,5 @@ Email Sent successfully to redacted@gmail.com
 ```
 I found this very interesting and as a result I got excited. I knew exactly what to do, I fired up an Intruder Window in BurpSuite, configured it to Brute-Force the value of the `id` parameter that was found earlier in the URL, and started the Attack. I looked at the Intruder again after letting it run for a few minutes and was surprised by being presented to more than 50,000 private email addresses of the users!
 
+<div class="tenor-gif-embed" data-postid="13287152" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/oh-really-say-what-huh-sorry-gif-13287152">Oh Really Say What GIF</a> from <a href="https://tenor.com/search/ohreally-gifs">Ohreally GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
