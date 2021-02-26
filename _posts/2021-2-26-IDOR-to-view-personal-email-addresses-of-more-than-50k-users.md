@@ -46,3 +46,10 @@ I found this very interesting and as a result I got excited. I knew exactly what
 
 
 Basically this Attack worked because the application assigned every user's account with a numeric **ID** from `1` till `50,000`. The `ID` of a user could have been guessed easily as this application kept the IDs sequential meaning that if two users sign up, User A and User B, User A signs up a minute before than User B, then User A will be asigned with an ID of `1` and User B would be assigned with an ID of `2`. Intruder Brute-forced all the IDs till 50,000 and since these IDs were sequential, this meant there were 50K users signed up on the web application but more importantly, an attacker would be able to view the **Private Email Addresses of More than 50K Users!** 
+
+**Impact**
+By exploiting this IDOR vulnerability an attacker is able to leak private email addresses of about 50,000 users which is a clear privacy violation for the users. The attacker can store these email addresses in a database and plan future attacks on them.
+
+- The ID parameter was vulnerable to IDOR attacks.
+- The ID parameter had a numeric ID with which objects(emails) were referenced.
+- The value of the ID parameter was predictable and an object is linked in an increasing value. In this case, these IDs with values from 1,2,3,4,5,6,7 and so on was referred to as an object(user email).
