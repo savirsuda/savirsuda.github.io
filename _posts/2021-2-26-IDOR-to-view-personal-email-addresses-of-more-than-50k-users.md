@@ -9,7 +9,12 @@ This is My First Blog and I am really excited about it at the time of writing th
 **Summary**
 
 
-Lets call the target website on which this vulnerability was found as **example.com** for the Privacy of the company. The Vulnerability exists in the Forgot-Password Page of **example.com**. Basically, while requesting a password change for a user,  a **GET** parameter was sent. I was able to manipulate this parameter and was able to view the Personal Email addresses of probably all of the registered users on the website. This was a pretty simple bug and a typical case of an [IDOR](https://portswigger.net/web-security/access-control/idor)
+Lets call the target website as **example.com** and the domain on which this vulnerability was found as **subdomain.example.com** for the Privacy of the company. The Vulnerability exists in the Forgot-Password Page of **subdomain.example.com**. Basically, while requesting a password change for a user,  a **GET** parameter was sent. I was able to manipulate this parameter and was able to view the Personal Email addresses of probably all of the registered users on the website. This was a pretty simple bug and a typical case of an [IDOR].(https://portswigger.net/web-security/access-control/idor)
+
+**Description**
+
+
+One day, I was doing Recon using my custom bash script and I had found an Interesting domain. The domain was called `subdomain.example.com`. 
 
 
 ![_config.yml]({{ site.baseurl }}/images/idor-img.PNG)
