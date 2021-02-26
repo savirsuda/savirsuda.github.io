@@ -14,7 +14,9 @@ Lets call the target website as **example.com** and the domain on which this vul
 **Description**
 
 
-One day, I was doing Recon using my custom bash script and I had found an interesting subdomain. The subdomain was called `subdomain.example.com`. I started crawling the domain to find all of its [URLS](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL) using an awesome tool made by [@TomNomNom](https://twitter.com/tomnomnom)
+One day, I was checking the results of my Recon which was done using my custom bash script and I while going through the subdomains it had found, I noticed an interesting subdomain. Lets call the subdomain as `subdomain.example.com`. I started crawling the subdomain to find all of its [URLS](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL) using an awesome tool made by [@TomNomNom](https://twitter.com/tomnomnom) called `waybackurls`. I am not going to explain how this tool works or what it is, you can find the Link to it's public Github Repository at the end of this Blog post. Basically I found an Interesting URL with `waybackurls` which is:
+`https://subdomain.example.com/accounts/Directory/XYZ/Form.aspx`. The extension of this page was `.aspx` which made me Directory Brute force for other `.aspx` files. Unfortunately I did not find anything and eventually gave up on Directory brute forcing. Now I thought of using Google Dorks on this subdomain. I used the following Google Dork:
+`site:subdomain.example.com inurl:id`. W
 
 
 ![_config.yml]({{ site.baseurl }}/images/idor-img.PNG)
