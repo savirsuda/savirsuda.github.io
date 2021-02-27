@@ -91,7 +91,8 @@ Due to these points, the severity of this vulnerability was **High**.
 - Checkout [@ProjectDiscovery's](https://twitter.com/pdiscoveryio) Github Repository for some cool Stuff that they publish: https://github.com/projectdiscovery
 - Follow [@Intigriti](https://twitter.com/intigriti) on Twitter and Sign up for Weekly BugBytes that they release every week, to stay up to date with the best resources!
 - Intigriti has archived all of the BugBytes that they have released till date [here](https://blog.intigriti.com/category/bugbytes/) .
-
+- I recommend checking out all the content made by [@Zseano](https://twitter.com/zseano). He has made [BugBountyHunter.com](https://www.bugbountyhunter.com/) which is more realistic than other CTFs and is overall better :)
+- Lastly, [@InsiderPhD's](https://twitter.com/InsiderPhD) [YouTube](https://www.youtube.com/user/RapidBug) channel has helped me out in my journey a lot! I recommend checking it out.   
 
 Thanks for Reading this, hope you enjoyed my first blog :)
 
