@@ -12,88 +12,18 @@ Hi guys, I am back with another blog. It has been a long time since I released a
 Lets call the target website as **shortener-example.com** to respect the privacy of the company. Let me brief you about the website's main feature. The Main website of the company was **www.example.com** and the domain I found this vulnerability on(shortener-example.com) was the company's custom URL shortener.
 
 
-
-![_config.yml]({{ site.baseurl }}/images/idor-img.PNG)
-
-
 **Description**
-
-
-One day, I was checking the results of my Recon which was done using my custom bash script and while going through the subdomains it had found, I noticed an interesting subdomain. Lets call the subdomain as `subdomain.example.com`. I started crawling the subdomain to find all of its [URLS](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL) using an awesome tool made by [@TomNomNom](https://twitter.com/tomnomnom) called `waybackurls`. I am not going to explain how this tool works or what it is, you can find the Link to it's public Github Repository at the end of this Blog post. Basically I found an Interesting URL with `waybackurls` which is:
-`https://subdomain.example.com/accounts/Directory/XYZ/Form.aspx`. This endpoint was actually a Forgot Password Page and it allowed users to request a password reset. Nothing fancy or alerting right now but lets see what happens later ;) The extension of this page was `.aspx` which made me Directory Brute force for other `.aspx` files. Unfortunately I did not find anything and eventually gave up on Directory brute forcing. Now I thought of using Google Dorks on this subdomain. I used the following Google Dork:
-
-
-`site:subdomain.example.com inurl:id`
-
-
-When I did this, I got an endpoint as a result of the search. This endpoint contained `ID` as a `GET` parameter in the URL with some other irrelevant parameters. The final URL looked like this: 
-
-
-`https://subdomain.example.com/accounts/Directory/XYZ/Form.aspx?ID=1&ContentTypeId=123`
-
-
-The interesting part was that in the response, when I scrolled down, I could see a random user's personal email address. I got the following response:
-
-
-`Email Sent successfully to redacted@gmail.com`
-
-
-
-The HTTP Response looked like this:
-
-```php
-HTTP/1.1 200 OK
-Date: <SOME-RANDOM-DATE>
-Content-Type: text/html; charset=utf-8
-Content-Length: <CONTENT-LENGTH>
-Connection: close
-Cache-Control: private, s-maxage=0
-Vary: Accept-Encoding
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-Content-Security-Policy: default-src 'self' 'unsafe-inline'
-Referrer-Policy: same-origin
-
-Email Sent successfully to redacted@gmail.com
-```
-I found this very interesting and as a result I got excited. I knew exactly what to do, I changed the value of the `ID` parameter to another random numeric ID and yes, I got another private email address of a user! This time I had changed the ID from `1` to `2`. I noticed that even 4 digit long numeric IDs were tied to a user's account. Now, it was time of a nice Proof Of Concept to increase the impact. I fired up an Intruder Window in BurpSuite, configured it to Brute-Force the value of the `id` parameter that was found earlier in the URL, and started the Attack. I looked at the Intruder again after letting it run for a few minutes and was surprised by being presented to more than 50,000 private email addresses of the users!
-
-![_config.yml]({{ site.baseurl }}/images/what.gif)
-
-
-This means that with the change of the ID parameter I can leak the private emails of users of this web application. Basically, this means that the ID's value 1 is linked with an email that is `redacted@gmail.com` and the ID's value of 2 is linked with the email `redacted2@gmail.com`.
-
-Basically this Attack worked because the application assigned every user's account with a numeric **ID** from `1` till `50,000`. The `ID` of a user could have been guessed easily as this application kept the IDs sequential meaning that if two users sign up, User A and User B, User A signs up a minute before than User B, then User A will be asigned with an ID of `1` and User B would be assigned with an ID of `2`. Intruder Brute-forced all the IDs till 50,000 and since these IDs were sequential, this meant there were 50K users signed up on the web application but more importantly, an attacker would be able to view the **Private Email Addresses of More than 50K Users!** 
 
 
 **Impact**
 
 
-By exploiting this IDOR vulnerability an attacker is able to leak private email addresses of about 50,000 users which is a clear privacy violation for the users. The attacker can store these email addresses in a database and plan future attacks on them.
-
-- To Leak the Private Email Address of a User, no user interaction was required at all.
-- The ID parameter was vulnerable to IDOR attacks.
-- The ID parameter had a numeric ID to which objects(emails) were referenced.
-- The value of the ID parameter was predictable and an object is linked to a user's account in a sequential pattern. In this case, these IDs with values from 1,2,3,4,5,6,7 and so on were referred to as Private Email Addresses of the users.
-
-Due to these points, the severity of this vulnerability was **High**.
 
 
 ![_config.yml]({{ site.baseurl }}/images/dab.gif)
 
 
 **Resources, Credits and Shoutouts**
-
-- [@TomNomNom's](https://twitter.com/tomnomnom) Github Repository: https://github.com/tomnomnom
-- Waybackurls' Public Github Repository: https://github.com/tomnomnom/waybackurls
-- Thanks to [@Bugcrowd](https://twitter.com/bugcrowd) for the [Diagram](https://github.com/savirsuda/savirsuda.github.io/blob/master/images/idor-img.PNG) that I used.
-- Checkout [@ProjectDiscovery's](https://twitter.com/pdiscoveryio) Github Repository for some cool Stuff that they publish: https://github.com/projectdiscovery
-- Follow [@Intigriti](https://twitter.com/intigriti) on Twitter and Sign up for Weekly BugBytes that they release every week, to stay up to date with the best resources!
-- Intigriti has archived all of the BugBytes that they have released till date [here](https://blog.intigriti.com/category/bugbytes/) .
-- Join my Discord Server by clicking [here](https://discord.gg/VPtSS8gfZ4).
-- I recommend checking out all the content made by [@Zseano](https://twitter.com/zseano). He has made [BugBountyHunter.com](https://www.bugbountyhunter.com/) which is more realistic than other CTFs and is overall better :)
-- Lastly, [@InsiderPhD's](https://twitter.com/InsiderPhD) [YouTube](https://www.youtube.com/user/RapidBug) channel has helped me out in my journey a lot! I recommend checking it out.   
 
 Thanks for Reading this, hope you enjoyed my first blog :)
 
