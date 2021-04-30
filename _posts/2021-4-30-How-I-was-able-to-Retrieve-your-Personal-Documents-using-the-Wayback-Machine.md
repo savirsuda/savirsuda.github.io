@@ -8,6 +8,7 @@ Hi guys, I am back with another blog. It has been a long time since I released a
 
 **Summary**
 
+This was a pretty unique finding and I haven't seen any reports on such a topic other than one disclosed by [@nagli](https://twitter.com/naglinagli). 
 
 Lets call the target website as **shortener-example.com** to respect the privacy of the company. Let me brief you about the website's main feature. The Main website of the company was **www.example.com** and the domain I found this vulnerability on(shortener-example.com) was the company's custom URL shortener.
 The `shortener-example.com` domain was responsible for shortening all the links sent by users of the application to each other in private chat on `www.example.com`. Due to a misconfiguration in the way this was implemented, I was able to retrieve the personal documents that a user would send to another user in personal chats.
@@ -51,7 +52,11 @@ Fast forward one month, the issue was fixed and the team rewarded me with a nice
 
 **Resources, Credits and Shoutouts**
 
-Thanks for Reading this, hope you enjoyed my first blog :)
+- Special thanks to [@nagli](https://twitter.com/naglinagli) for giving me the idea about this report by disclosing something similar on Hackerone!
+- Read this disclosed report by him on Hackerone - https://hackerone.com/reports/1034257
+- Join my Discord Server by clicking [here](https://discord.com/invite/VPtSS8gfZ4)!
+- 
+Thanks for Reading this, hope you enjoyed my blog :)
 
 Many more to come xD
 
