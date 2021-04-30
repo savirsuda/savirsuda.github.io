@@ -44,7 +44,7 @@ Fast forward one month, the issue was fixed and the team rewarded me with a nice
 **Timeline**
 
 - Reported the bug on *Mar 29th (about 1 month ago)*
-- Status was changed to `Needs More Info` because the triager had some doubts on *Mar 30th (about 1 month ago)*
+- Status was changed to `Needs More Info` because the triager had some doubts. This happened on *Mar 30th (about 1 month ago)*
 - I gave a detailed reply on *Mar 30th (about 1 month ago)*
 - Report was marked as `Triaged` on *Apr 2nd (29 days ago)*
 - Report was paid out with a 4 digit bounty :) on *Apr 29th (21 hrs ago)*
