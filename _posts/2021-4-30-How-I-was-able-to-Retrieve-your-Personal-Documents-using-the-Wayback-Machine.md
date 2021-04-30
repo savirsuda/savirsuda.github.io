@@ -22,8 +22,9 @@ When I noticed this, I quickly thought of using a tool called [waybackurls](http
 When I wrote the command `echo "shortener-example.com" | waybackurls"` , I saw thousands of shortened links in my terminal.
 
 As I visited them one by one, they opened into full actual URLs that they originally were. I found a lot of interesting URLs like links to Private documents such as documents hosted on Google Drive, Unlisted Youtube Videos, Pastebin links, etc. 
-I remember that I found a Google Drive link which was hosting a PDF file that was full of PII information (Phone Numbers, Email Addresses, First and Last names, etc)
+I remember that I found a Google Drive link which was hosting a PDF file that was full of PII information (Phone Numbers, Email Addresses, First and Last names, etc). 
 
+Let me explain a bit more about this bug - So basically, whenever a user sends a link to another user(This link can be any link at all. It can be a link to Documents hosted on the internet and it can also just links to regulat websites.) the domain `shortener-example.com` gets that link and shortens it. After shortening this link, the domain indexes those urls allowing web crawlers to find those links. Now take a minute to think about this situation. You send a link to your teacher(It could be a Google Drive Link to suppose your medical report) and your teacher receives it, end of the matter. Well, he only thing it is an end to is your **privacy** because by sharing this link to your medical report with just your teacher, you have made it public on the Internet.
 
 **Impact**
 
