@@ -53,7 +53,7 @@ Fast forward one month, the issue was fixed and the team rewarded me with a nice
 **Resources, Credits and Shoutouts**
 
 - Special thanks to [@nagli](https://twitter.com/naglinagli) for giving me the idea about this report by disclosing something similar on Hackerone!
-- Read this disclosed report by him on Hackerone - https://hackerone.com/reports/1034257
+- Read [this](https://hackerone.com/reports/1034257)disclosed report by him on Hackerone.
 - Join my Discord Server by clicking [here](https://discord.com/invite/VPtSS8gfZ4)!
 - 
 Thanks for Reading this, hope you enjoyed my blog :)
