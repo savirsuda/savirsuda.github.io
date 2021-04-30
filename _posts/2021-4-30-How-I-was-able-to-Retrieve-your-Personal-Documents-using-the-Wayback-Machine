@@ -15,8 +15,14 @@ The `shortener-example.com` domain was responsible for shortening all the links 
 
 **Description**
 
+This domain, `shortener-example.com` gathered all the links sent by users on `www.example.com` and would shorten those links. They did this to decrease the load or to maximize storage.
+When I later digged deep into how this domain worked, I found out that this domain would collect all the links sent by users to eachother in private chats(Google Drive Links, Unlisted Youtube Video Links, etc) and after shortening those links, the shortened link would look somewhat like `http://shortened-example.com/<SOME-RANDOM-TOKEN>`.
+I then found out that this domain would **Index those shortened URLS**. This means that these shortened links would get crawled by search engines. Example of these "search engines" - Google, Wayback Machine, etc.
+When I noticed this, I quickly thought of using a tool called [waybackurls](https://github.com/tomnomnom/waybackurls) by [@TomNomNom](https://twitter.com/TomNomNom) to find these Shortened Indexed URLs.
+When I wrote the command `echo "shortener-example.com" | waybackurls"` , I saw thousands of shortened links in my terminal.
 
-
+As I visited them one by one, they opened into full actual URLs that they originally were. I found a lot of interesting URLs like links to Private documents such as documents hosted on Google Drive, Unlisted Youtube Videos, Pastebin links, etc. 
+I remember that I found a Google Drive link which was hosting a PDF file that was full of PII information (Phone Numbers, Email Addresses, First and Last names, etc)
 
 
 **Impact**
