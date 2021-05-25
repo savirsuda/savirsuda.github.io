@@ -17,6 +17,3 @@ Join My Discord Server by clicking <a href="https://discord.gg/VPtSS8gfZ4">here<
 I would love to get Invited to your Programs on [HackerOne](https://hackerone.com/savxiety)!
 
 Feel free to shoot me a Dm on Twitter at anytime :)
-
-
-<script data-ad-client="ca-pub-6778220889655919" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
