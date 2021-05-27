@@ -10,21 +10,50 @@ To find leaks on Github like Credentials, Keys, Secrets, you have to put in the 
 
 ** How I started my Github Recon**
 
-Like any other day, wanting to work on my target, grinding myself to find a bug, I opened my PC and checked my Google Keep. It said "Github Day", well this meant I had to start with the Github Recon on my target. I thought this was gonna be a very boring day but little did I know that I would end up with a really awesome bug. Anyways, I went over to www.github.com and started searching with basic Github Dorks like:
+Like any other day, wanting to work on my target, grinding myself to find a bug, I opened my PC and checked my Google Keep. It said "Github Day", well this meant I had to start with the Github Recon on my target. I thought this was gonna be a very boring day but little did I know that I would end up with a really awesome bug. Anyways, I went over to www.github.com and started searching for domain specific things with basic Github Dorks like:
 
 
 - `"target.com" subdomains`
-- `"Target" language:python`
-- `"target.com" -help.target.com`
-- `"target.com" language:xml`
+- `"target.com" language:python`
+- `"target.com" NOT help.target.com`
+- `"target.com" NOT staging language:xml`
 - `"target.com" password`
 - `"target.com" secret`
 - `"target.com" token`
 - `"target.com" api_key`
 
-And a few more, you get the idea. 
+And a few more, you get the idea. I got a few results, one of them caught my eye. I saw a password in a file. The filetype was JSON and the contents looked like this:
+
+```json
+
+{
+	"host": "cpanel.subdomain.target.com",
+	"port": "2083",
+	"cpanel_username": targetcpanel,
+	"cpanel_password": <RANDOM-ALPHANUMERIC-PASSWORD>
+
+}
+
+```
+
+I got excited and a little bit out of control because it took me a lot of time to find this. I navigated to https://cpanel.subdomain.target.com:2083 and to my disappointment, the port was closed :(
+I went back to the file and saw that at the name of the file contained "test" in it and at the end of the file, the developer had commented out "Test Data". This led to frustration and I ended up closing my PC and watching Netflix. 
 
 
+** Back on the Grind**
+
+After some time, when I was feeling motivated again, I launched Github once again and this time I did not want to give up. I thought of removing certain keywords from the search results so that I would find only the results which are not False Positives and Test Data.
+
+For this, I used the above Github Dork:
+
+
+`target.com password NOT test NOT sandbox NOT staging NOT development NOT docker NOT help NOT language:java` 
+
+Now, from the above Dork, as expected, I found all the good results, test data and other data that I didn't want was not filtered out and I could finally focus on the important stuff. I had a good feeling about this. One thing to note here for me was that I found a lot bash results. Files ending with `.sh`. I then  appended this into my dork:
+
+`language:bash`
+
+Now, I was only looking at bash code. I started searching for keywords like `secret`, `key`, `token`, etc, but I couldn't find any good results. I had the program policy open in another tab and I was reading the little information that is sometimes given about the in-scope domains. Next to the domain that I was searching for, I saw the keyword `Postgres` written next to it. I thought it would be a good addition to my search query and searched for it. I got a lot of results, I clicked on the `Sort` button, and then I clicked on `Rcently indexed`. This shows me the latest index results. On the top of the page, I saw a bash file which contained some random bash and I thought it was nothing interesting 
 
 ![_config.yml]({{ site.baseurl }}/images/leak.PNG)
 
