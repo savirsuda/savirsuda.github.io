@@ -100,7 +100,7 @@ I tried to login using the credentials, port and the host, but I couldn't becaus
 [Here](https://savswag.creator-spring.com/) is the link to the store. If you like any of my designs there, buying them would support me alot(Use code `SUMMER21` for a 10% DISCOUNT. Valid till 1st June.) and also, if you have any feedback on the designs, prices, or anything at all, please send me a Direct Message on my [Twitter](https://twitter.com/savxiety). It would mean the world to me :)
 
 Thanks for Reading this, hope you enjoyed my blog :)
-
+If you have any questions regarding this, feel free to shoot me a Dm on Twitter, or Discord!
 Many more to come xD
 
 Until next time!
