@@ -44,9 +44,9 @@ I went back to the file and saw that the name of the file contained "test" in it
 
 **Back on the Grind**
 
-After some time, when I was feeling motivated again, I launched Github once again and this time I did not want to give up. I thought of removing certain keywords from the search results so that I would find only the results which are not False Positives and Test Data.
+After some time, when I was feeling motivated again, I launched Github once again and this time I did not want to give up. I thought of removing certain keywords from the search results so that I only find the results which are not False Positives and not Test Data.
 
-For this, I used the above Github Dork:
+For this, I used the following Github Dork:
 
 
 `target.com password NOT test NOT sandbox NOT staging NOT development NOT docker NOT help NOT language:java` 
