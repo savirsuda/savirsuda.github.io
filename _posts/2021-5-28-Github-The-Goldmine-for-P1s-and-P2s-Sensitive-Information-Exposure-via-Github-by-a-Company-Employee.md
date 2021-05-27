@@ -53,13 +53,28 @@ Now, from the above Dork, as expected, I found all the good results, test data a
 
 `language:bash`
 
-Now, I was only looking at bash code. I started searching for keywords like `secret`, `key`, `token`, etc, but I couldn't find any good results. I had the program policy open in another tab and I was reading the little information that is sometimes given about the in-scope domains. Next to the domain that I was searching for, I saw the keyword `Postgres` written next to it. I thought it would be a good addition to my search query and searched for it. I got a lot of results, I clicked on the `Sort` button, and then I clicked on `Rcently indexed`. This shows me the latest index results. On the top of the page, I saw a bash file which contained some random bash and I thought it was nothing interesting 
+Now, I was only looking at bash code. I started searching for keywords like `secret`, `key`, `token`, etc, but I couldn't find any good results. I had the program policy open in another tab and I was reading the little information that is sometimes given about the in-scope domains. Next to the domain that I was searching for, I saw the keyword `Postgres` written next to it. I thought it would be a good addition to my search query and searched for it. I got a lot of results, I clicked on the `Sort` button, and then I clicked on `Rcently indexed`. This shows me the latest index results. On the top of the page, I saw a bash file which contained some random bash and I thought it was nothing interesting but when I took a closer look at it, I saw that I had found postgresql credentials for a website! 
+
+Here is the screenshot:
 
 ![_config.yml]({{ site.baseurl }}/images/leak.PNG)
 
 
+The credentials were in the url and they were very easy to spot. The format in which they were preset looked like this:
 
 
+`postgresql://<USERNAME>:<PASSWORD>@subdomain.target.com:5439`
+
+This time, I tried to stay calm(it's hard!) and find out if these were **actually** valid credentials or not. This is a Github Tip that I would like to share. Whenever you find something that may look like credentials, always check if these were published to Github by someone related to the Target Company or was published by some random person on the Internet. 
+
+
+**How to check if the Person who published the credentials is related to the Company?**
+
+The way you do this is, by visiting the profile of the person who has leaked the credentials and copy their Name and search for it on Linkedin. I did this and found out that this guy is a former Senior Software Engineer at the Target Company.
+
+![_config.yml]({{ site.baseurl }}/images/linkedin-screenshot.PNG)
+
+I tried to login using the credentials, port and the host, but I couldn't because the port was filtered or closed. Because of this, I tried to send the report in as a Medium severity bug but I guess I misclicked and it got set to `High`. The next week, to my surprise, I woke up and checked my phone, I saw that the report got triaged, It didn't impress me much because I had started getting a lot triages and I knew this bug would get triaged so I went over to my PC and opened the report to acknowledge the triage and found out that I was paid out for the bug too! Yes, as a `High/P2`!
 
 ![_config.yml]({{ site.baseurl }}/images/dab.gif)
 
