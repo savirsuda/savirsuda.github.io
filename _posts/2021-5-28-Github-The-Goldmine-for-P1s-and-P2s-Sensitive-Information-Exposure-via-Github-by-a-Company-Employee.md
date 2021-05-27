@@ -14,7 +14,7 @@ To find leaks on Githu like Credentials, Keys, Secrets, you have to put in the t
 
 
 
-![_config.yml]({{ site.baseurl }}/images/leak1.PNG)
+![_config.yml]({{ site.baseurl }}/images/leak.PNG)
 
 
 
