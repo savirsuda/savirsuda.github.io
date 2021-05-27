@@ -5,16 +5,30 @@ title: Github, The Goldmine for P1s and P2s - Sensitive Information Exposure via
 
 Github Leaks - We have seen a lot of people in the bug bounty community tweeting about their Github Findings and getting paid out four figs for their reports. That's awesome and Kudos to them for that but, if we take a step back and take a look, there aren't many blogs on Github Findings. Don't get me wrong, there are a few blogs and they are great too, but unfortunately not enough. We need more. In this write-up, I will tell you **EVERYTHING** that led me to finding a Github Leak that was triaged and paid out as a High/P2 Severity bug. Keep reading. 
 
-To find leaks on Githu like Credentials, Keys, Secrets, you have to put in the time. It takes hours to find valid credentials. This means that you will need patience more than anything else to find those high paying bugs.  
+To find leaks on Github like Credentials, Keys, Secrets, you have to put in the time. It can take hours to find valid credentials. This means that you will need patience more than anything else to find those high-paying juicy creds.
 
 
+** How I started my Github Recon**
+
+Like any other day, wanting to work on my target, grinding myself to find a bug, I opened my PC and checked my Google Keep. It said "Github Day", well this meant I had to start with the Github Recon on my target. I thought this was gonna be a very boring day but little did I know that I would end up with a really awesome bug. Anyways, I went over to www.github.com and started searching with basic Github Dorks like:
 
 
+- `"target.com" subdomains`
+- `"Target" language:python`
+- `"target.com" -help.target.com`
+- `"target.com" language:xml`
+- `"target.com" password`
+- `"target.com" secret`
+- `"target.com" token`
+- `"target.com" api_key`
 
+And a few more, you get the idea. 
 
 
 
 ![_config.yml]({{ site.baseurl }}/images/leak.PNG)
+
+
 
 
 
