@@ -10,7 +10,7 @@ To find leaks on Github like Credentials, Keys, Secrets, you have to put in the 
 
 **How I started my Github Recon**
 
-Like any other day, wanting to work on my target, grinding myself to find a bug, I opened my PC and checked my Google Keep. It said "Github Day", well this meant I had to start with the Github Recon on my target. I thought this was gonna be a very boring day but little did I know that I would end up with a really awesome bug. Anyways, I went over to www.github.com and started searching for domain specific things with basic Github Dorks like:
+Like any other day, wanting to work on my target, grinding myself to find a bug, I opened my PC and checked my Google Keep. It said "Github Day", well this meant I had to start with the Github Recon on my target. I thought this was gonna be a very boring day but little did I know that I would end up with a really awesome bug. Anyways, I went over to [www.github.com](https://www.github.com) and started searching for domain specific things with basic Github Dorks like:
 
 
 - `"target.com" subdomains`
@@ -36,7 +36,7 @@ And a few more, you get the idea. I got a few results, one of them caught my eye
 
 ```
 
-I got excited and a little bit out of control because it took me a lot of time to find this. I navigated to https://cpanel.subdomain.target.com:2083 and to my disappointment, the port was closed :(
+I got excited and a little bit out of control because it took me a lot of time to find this. I navigated to [https://cpanel.subdomain.target.com:2083](http://localhost) and to my disappointment, the port was closed :(
 I went back to the file and saw that at the name of the file contained "test" in it and at the end of the file, the developer had commented out "Test Data". This led to frustration and I ended up closing my PC and watching Netflix. 
 
 
