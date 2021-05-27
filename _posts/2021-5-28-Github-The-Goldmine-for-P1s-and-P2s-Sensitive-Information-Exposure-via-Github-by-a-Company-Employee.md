@@ -51,7 +51,7 @@ For this, I used the following Github Dork:
 
 `target.com password NOT test NOT sandbox NOT staging NOT development NOT docker NOT help NOT language:java` 
 
-Now, from the above Dork, as expected, I found all the good results, test data and other data that I didn't want was not filtered out and I could finally focus on the important stuff. I had a good feeling about this. One thing to note here for me was that I found a lot bash results. Files ending with `.sh`. I then  appended this into my dork:
+Now, from the above Dork, as expected, I found all the good results, test data and other data that I didn't want was now filtered out and I could finally focus on the important stuff. I had a good feeling about this. One thing to note here for me was that I found a lot of bash results. Files ending with `.sh`. I then  appended this into my dork:
 
 `language:bash`
 
