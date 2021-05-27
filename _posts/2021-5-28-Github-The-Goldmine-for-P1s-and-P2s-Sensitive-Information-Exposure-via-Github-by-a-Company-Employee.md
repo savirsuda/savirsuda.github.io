@@ -80,6 +80,16 @@ I tried to login using the credentials, port and the host, but I couldn't becaus
 
 ![_config.yml]({{ site.baseurl }}/images/dab.gif)
 
+**Takeaways**
+
+- Search the code on Github related to your target using normal, basic search queries at first to get a feel of the code there is present about your target. Slowly progress towards more complex and specific queries.
+- Now, you will be able to make out which results you want and which are useless. For example, you can remove the `help.target.com` domain from the results using the `NOT` query in your search. The things you filter out depends on your target. Remember, **Nobody can give you a crafted Github Dork which when pasted will give you valid credentials**. It all depends on your Target's code. Remove the useless stuff ;)
+- Don't forget to remove keywords like `test`, `docker`, etc. to reduce false positives and false leads.
+- If you think you have found valid credentials, ALWAYS find out if the code published on Github was published by someone related to the Organization or not, usually these are Software Developers. To do this, make use of Linkedin.
+- Finally, Github Recon is hard. There is a lot on Github. It takes a lot of time to actually do what you want and navigate this Gold mine in your favour. You have to make the efforts and put the hours in to see results.
+- **PATIENCE IS KEY**. If you fall down, stand right back up.
+
+
 **Resources, Credits and Shoutouts**
 
 - [Youtube Video](https://www.youtube.com/watch?v=l0YsEk_59fQ) uploaded by [@BugCrowd](https://twitter.com/Bugcrowd) and made by [Th3G3nt3lman](https://twitter.com/Th3G3nt3lman) is a great resource for beginners to learn Github Recon and find leaks. 
