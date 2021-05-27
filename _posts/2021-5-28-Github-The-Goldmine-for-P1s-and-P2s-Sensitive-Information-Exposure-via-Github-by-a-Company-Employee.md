@@ -8,7 +8,7 @@ Github Leaks - We have seen a lot of people in the bug bounty community tweeting
 To find leaks on Github like Credentials, Keys, Secrets, you have to put in the time. It can take hours to find valid credentials. This means that you will need patience more than anything else to find those high-paying juicy creds.
 
 
-** How I started my Github Recon**
+**How I started my Github Recon**
 
 Like any other day, wanting to work on my target, grinding myself to find a bug, I opened my PC and checked my Google Keep. It said "Github Day", well this meant I had to start with the Github Recon on my target. I thought this was gonna be a very boring day but little did I know that I would end up with a really awesome bug. Anyways, I went over to www.github.com and started searching for domain specific things with basic Github Dorks like:
 
