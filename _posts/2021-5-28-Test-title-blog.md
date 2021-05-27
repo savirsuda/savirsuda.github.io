@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Github - The Goldmine for P1s and P2s ~ Sensitive Information Exposure via Github by a Company Employee
+title: Github, The Goldmine for P1s and P2s - Sensitive Information Exposure via Github by a Company Employee
 ---
 
 
