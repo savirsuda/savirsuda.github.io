@@ -55,7 +55,7 @@ Now, from the above Dork, as expected, I found all the good results, test data a
 
 `language:bash`
 
-Now, I was only looking at bash code. I started searching for keywords like `secret`, `key`, `token`, etc, but I couldn't find any good results. I had the program policy open in another tab and I was reading the little information that is sometimes given about the in-scope domains. Next to the domain that I was searching for, I saw the keyword `Postgres` written next to it. I thought it would be a good addition to my search query and searched for it. I got a lot of results, I clicked on the `Sort` button, and then I clicked on `Rcently indexed`. This shows me the latest index results. On the top of the page, I saw a bash file which contained some random bash and I thought it was nothing interesting but when I took a closer look at it, I saw that I had found postgresql credentials for a website! 
+Now, I was only looking at bash code. I started searching for keywords like `secret`, `key`, `token`, etc, but I couldn't find any good results. I had the program policy open in another tab and I was reading the little information that is sometimes given about the in-scope domains. Next to the domain that I was searching for, I saw the keyword `PostgreSQL` written. I thought it would be a good addition to my search query and I searched for it. I got a lot of results, I clicked on the `Sort` button, and then I clicked on `Rcently indexed`. This shows me the latest index results. On the top of the page, I saw a bash file which contained some random bash and I thought it was nothing interesting but when I took a closer look at it, I saw that I had found postgresql credentials for a website! 
 
 Here is the screenshot:
 
