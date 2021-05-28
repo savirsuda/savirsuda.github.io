@@ -76,7 +76,11 @@ The way you do this is, by visiting the profile of the person who has leaked the
 
 ![_config.yml]({{ site.baseurl }}/images/linkedin-screenshot.PNG)
 
-I tried to login using the credentials, port and the host, but I couldn't because the port was filtered or closed. Because of this, I tried to send the report in as a Medium severity bug but I guess I misclicked and it got set to `High`. The next week, I woke up and checked my phone, I saw that the report got triaged, It didn't impress me much because I had started getting a lot triages and I knew this bug would get triaged so I went over to my PC and opened the report to acknowledge the triage and found out that I was paid out for the bug too! Yes, as a `High/P2`!
+I tried to login using the credentials, port and the host, but I couldn't because the port was filtered or closed. Because of this, I tried to send the report in as a Medium severity bug but I guess I misclicked and it got set to `High`. The next week, I woke up and checked my phone, I saw that the report got triaged, It didn't impress me much because I had started getting a lot triages and I was expecting this bug to get triaged so I went over to my PC and opened the report to acknowledge the triage and found out that I was paid out for the bug as well! Yes, as a `High/P2`!
+
+I was shocked because I didn't expect this to get triaged as a High because I wasn't able to gain access with the credentials.
+The team said that they are considering this because they open this port monthly for maintenance and other reasons.
+Then this would become exploitable and pose a real security risk.
 
 ![_config.yml]({{ site.baseurl }}/images/dab.gif)
 
