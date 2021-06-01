@@ -99,9 +99,6 @@ Then this would become exploitable and pose a real security risk.
 - [Youtube Video](https://www.youtube.com/watch?v=l0YsEk_59fQ) uploaded by [@BugCrowd](https://twitter.com/Bugcrowd) and made by [Th3G3nt3lman](https://twitter.com/Th3G3nt3lman) is a great resource for beginners to learn Github Recon and find leaks. 
 - Join my Discord Server by clicking [here](https://discord.com/invite/VPtSS8gfZ4).
 - Subscribe to [@securibee's](https://twitter.com/securibee) newsletter, [@Intigriti's](https://twitter.com/intigriti) bug bytes to stay up-to-date with the resources.
-- Not exactly a resource but I wanted to share with the community something else that I have been doing on the side, I am trying to start my own Online Print-On Demand Business using [Teespring](https://teespring.com/). 
-
-[Here](https://savswag.creator-spring.com/) is the link to the store. If you like any of my designs there, buying them would support me alot(Use code `SUMMER21` for a 10% DISCOUNT. Valid till 1st June.) and also, if you have any feedback on the designs, prices, or anything at all, please send me a Direct Message on my [Twitter](https://twitter.com/savxiety). It would mean the world to me :)
 
 Thanks for Reading this, hope you enjoyed my blog :)
 If you have any questions regarding this, feel free to shoot me a Dm on Twitter, or Discord!
