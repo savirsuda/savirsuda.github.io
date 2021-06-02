@@ -99,6 +99,9 @@ Then this would become exploitable and pose a real security risk.
 - [Youtube Video](https://www.youtube.com/watch?v=l0YsEk_59fQ) uploaded by [@BugCrowd](https://twitter.com/Bugcrowd) and made by [Th3G3nt3lman](https://twitter.com/Th3G3nt3lman) is a great resource for beginners to learn Github Recon and find leaks. 
 - Join my Discord Server by clicking [here](https://discord.com/invite/VPtSS8gfZ4).
 - Subscribe to [@securibee's](https://twitter.com/securibee) newsletter, [@Intigriti's](https://twitter.com/intigriti) bug bytes to stay up-to-date with the resources.
+- Checkout my newly releazed Clothing brand, **The InfoSec Tees**, on [Twitter](https://twitter.com/TheInfosecTees) and [Instagram](https://www.instagram.com/theinfosectees/)
+	[Here](https://my-store-b7af01.creator-spring.com/) is the link to the website.
+
 
 Thanks for Reading this, hope you enjoyed my blog :)
 If you have any questions regarding this, feel free to shoot me a Dm on Twitter, or Discord!
