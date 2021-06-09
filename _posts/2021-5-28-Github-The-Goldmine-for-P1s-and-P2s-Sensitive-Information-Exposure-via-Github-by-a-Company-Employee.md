@@ -3,8 +3,6 @@ layout: post
 title: Github, The Goldmine for P1s and P2s - Sensitive Information Exposure via Github by a Company Employee
 ---
 
-{% include ads2.html %}
-
 Github Leaks - We have seen a lot of people in the bug bounty community tweeting about their Github Findings and getting paid out four figs for their reports. That's awesome and Kudos to them for that but, if we take a step back and take a look, there aren't many blogs on Github Findings. Don't get me wrong, there are a few blogs and they are great too, but unfortunately not enough. We need more. In this write-up, I will tell you **EVERYTHING** that led me to finding a Github Leak that was triaged and paid out as a High/P2 Severity bug. Keep reading. 
 
 To find leaks on Github like Credentials, Keys, Secrets, you have to put in the time. It can take hours to find valid credentials. This means that you will need patience more than anything else to find those high-paying juicy creds.
@@ -43,6 +41,8 @@ I got excited and a little bit out of control because it took me a lot of time t
 
 I went back to the file and saw that the name of the file contained "test" in it and at the end of the file, the developer had commented out "Test Data". This led to frustration and I ended up closing my PC and watching Netflix. 
 
+
+{% include ads2.html %}
 
 **Back on the Grind**
 
