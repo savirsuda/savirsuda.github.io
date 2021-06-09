@@ -3,6 +3,7 @@ layout: post
 title: How I was able to Retrieve your Personal Documents using the Wayback Machine!
 ---
 
+{% include ads2.html %}
 
 Hi guys, I am back with another blog. It has been a long time since I released anything, so here I am. This one was a really interesting vulnerability and it was pretty fun to exploit it. Without wasting any more of your time, lets get into the bug :)
 
