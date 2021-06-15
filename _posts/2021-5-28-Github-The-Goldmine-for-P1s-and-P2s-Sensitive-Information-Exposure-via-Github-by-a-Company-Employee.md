@@ -42,8 +42,6 @@ I got excited and a little bit out of control because it took me a lot of time t
 I went back to the file and saw that the name of the file contained "test" in it and at the end of the file, the developer had commented out "Test Data". This led to frustration and I ended up closing my PC and watching Netflix. 
 
 
-{% include ads2.html %}
-
 **Back on the Grind**
 
 After some time, when I was feeling motivated again, I launched Github once again and this time I did not want to give up. I thought of removing certain keywords from the search results so that I only find the results which are not False Positives and not Test Data.
