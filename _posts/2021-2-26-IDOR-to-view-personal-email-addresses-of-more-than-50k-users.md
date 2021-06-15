@@ -15,7 +15,6 @@ Lets call the target website as **example.com** and the domain on which this vul
 
 ![_config.yml]({{ site.baseurl }}/images/idor-img.PNG)
 
-{% include ads2.html %}
 
 **Description**
 
