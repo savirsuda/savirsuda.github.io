@@ -100,6 +100,9 @@ Then this would become exploitable and pose a real security risk.
 - Join my Discord Server by clicking [here](https://discord.com/invite/VPtSS8gfZ4).
 - Subscribe to [@securibee's](https://twitter.com/securibee) newsletter, [@Intigriti's](https://twitter.com/intigriti) bug bytes to stay up-to-date with the resources.
 - Checkout my newly released Clothing brand, **The InfoSec Tees**'s [Website](https://my-store-b7af01.creator-spring.com/), on [Twitter](https://twitter.com/TheInfosecTees) and on [Instagram](https://www.instagram.com/theinfosectees/).
+- Need a VPS to hack from? I got you covered!
+Get $100 credit on Digital Ocean using this link by Signing-up:
+[here](https://bit.ly/bugbountytutorials_digitalocean).
 
 
 Thanks for Reading this, hope you enjoyed my blog :)
