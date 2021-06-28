@@ -96,6 +96,7 @@ Then this would become exploitable and pose a real security risk.
 
 **Resources, Credits and Shoutouts**
 
+- Check out and Subscribe to our brand new YouTube channel: [Bug Bounty Tutorials](https://www.youtube.com/channel/UCqk7Mxf-5UxnQ7mfqbKekUQ?sub_confirmation=1)
 - [Youtube Video](https://www.youtube.com/watch?v=l0YsEk_59fQ) uploaded by [@BugCrowd](https://twitter.com/Bugcrowd) and made by [Th3G3nt3lman](https://twitter.com/Th3G3nt3lman) is a great resource for beginners to learn Github Recon and find leaks. 
 - Join my Discord Server by clicking [here](https://discord.com/invite/VPtSS8gfZ4).
 - Subscribe to [@securibee's](https://twitter.com/securibee) newsletter, [@Intigriti's](https://twitter.com/intigriti) bug bytes to stay up-to-date with the resources.
