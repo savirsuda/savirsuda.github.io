@@ -102,7 +102,7 @@ Then this would become exploitable and pose a real security risk.
 - Checkout my newly released Clothing brand, **The InfoSec Tees**'s [Website](https://my-store-b7af01.creator-spring.com/), on [Twitter](https://twitter.com/TheInfosecTees) and on [Instagram](https://www.instagram.com/theinfosectees/).
 - Need a VPS to hack from? I got you covered!
 Get $100 credit on Digital Ocean using this link by Signing-up:
-[here](https://bit.ly/bugbountytutorials_digitalocean).
+[here](https://m.do.co/c/e42e4742ff83).
 
 
 Thanks for Reading this, hope you enjoyed my blog :)
